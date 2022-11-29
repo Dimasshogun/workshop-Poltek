@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class ManagerBenda : MonoBehaviour
+public class ManagerBendaEmpat : MonoBehaviour
 {
-    public GameObject BendaSatu, BendaDua, BendaTiga, BendaEmpat, BendaLima, BendaSatuHitam, BendaDuaHitam, BendaTigaHitam, BendaEmpatHitam, BendaLimaHitam, finish;
+    public GameObject BendaSatu, BendaDua, BendaTiga, BendaEmpat, BendaSatuHitam, BendaDuaHitam, BendaTigaHitam, BendaEmpatHitam, finish;
 
-    Vector2 BendaSatuInitialPos, BendaDuaInitialPos, BendaTigaInitialPos, BendaEmpatInitialPos, BendaLimaInitialPos;
+    Vector2 BendaSatuInitialPos, BendaDuaInitialPos, BendaTigaInitialPos, BendaEmpatInitialPos;
 
     public AudioSource source;
     public AudioClip[] correct;
     public AudioClip incorrect;
 
-    bool BendaSatuCorrect, BendaDuaCorrect, BendaTigaCorrect, BendaEmpatCorrect, BendaLimaCorrect = false;
+    bool BendaSatuCorrect, BendaDuaCorrect, BendaTigaCorrect, BendaEmpatCorrect = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,6 @@ public class ManagerBenda : MonoBehaviour
         BendaDuaInitialPos = BendaDua.transform.position;
         BendaTigaInitialPos = BendaTiga.transform.position;
         BendaEmpatInitialPos = BendaEmpat.transform.position;
-        BendaLimaInitialPos = BendaLima.transform.position;
     }
 
     
@@ -42,10 +41,6 @@ public class ManagerBenda : MonoBehaviour
     public void DragBendaEmpat()
     {
         BendaEmpat.transform.position = Input.mousePosition;
-    }
-    public void DragBendaLima()
-    {
-        BendaLima.transform.position = Input.mousePosition;
     }
 
     public void DropBendaSatu()
@@ -116,27 +111,11 @@ public class ManagerBenda : MonoBehaviour
             source.Play();
         }
     }
-    public void DropBendaLima()
-    {
-        float Distance = Vector3.Distance(BendaLima.transform.position, BendaLimaHitam.transform.position);
-        if (Distance < 50)
-        {
-            BendaLima.transform.position = BendaLimaHitam.transform.position;
-            source.clip = correct[Random.Range(0, correct.Length)];
-            source.Play();
-            BendaLimaCorrect = true;
-        }
-        else
-        {
-            BendaLima.transform.position = BendaLimaInitialPos;
-            source.clip = incorrect;
-            source.Play();
-        }
-    }
+
     
     void Update()
     {
-        if(BendaSatuCorrect && BendaDuaCorrect && BendaTigaCorrect && BendaEmpatCorrect && BendaLimaCorrect)
+        if(BendaSatuCorrect && BendaDuaCorrect && BendaTigaCorrect && BendaEmpatCorrect)
         {
             finish.gameObject.SetActive(true);
         }

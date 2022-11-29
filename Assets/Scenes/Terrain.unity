@@ -3308,6 +3308,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0340912, y: 0.6928241, z: 0.64796686}
   m_Center: {x: -0.000000059604645, y: 0.346412, z: -0.008713961}
+--- !u!114 &769699810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769699803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903479373cf7a694fb7175443f367606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &842069539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3582,6 +3594,52 @@ RectTransform:
   m_AnchoredPosition: {x: 266, y: 213}
   m_SizeDelta: {x: 208.5164, y: 217.8179}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &962677344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962677346}
+  - component: {fileID: 962677345}
+  m_Layer: 0
+  m_Name: Windzone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!182 &962677345
+WindZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962677344}
+  m_Enabled: 1
+  m_Mode: 0
+  m_Radius: 20
+  m_WindMain: 1
+  m_WindTurbulence: 1
+  m_WindPulseMagnitude: 0.5
+  m_WindPulseFrequency: 0.01
+--- !u!4 &962677346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962677344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 382.1643, y: 0.5340906, z: 341.83005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966402596
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,6 +4037,7 @@ GameObject:
   - component: {fileID: 1092197157}
   - component: {fileID: 1092197159}
   - component: {fileID: 1092197158}
+  - component: {fileID: 1092197160}
   m_Layer: 0
   m_Name: gulungankertas
   m_TagString: Kuis2
@@ -4066,6 +4125,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1092197160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092197156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903479373cf7a694fb7175443f367606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1093116723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,6 +4757,7 @@ GameObject:
   - component: {fileID: 1270791091}
   - component: {fileID: 1270791090}
   - component: {fileID: 1270791089}
+  - component: {fileID: 1270791092}
   m_Layer: 0
   m_Name: 'gulungankertasCoin '
   m_TagString: Kuis3
@@ -4786,6 +4858,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1270791092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270791087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903479373cf7a694fb7175443f367606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1275973433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,6 +5174,7 @@ GameObject:
   - component: {fileID: 1340503528}
   - component: {fileID: 1340503527}
   - component: {fileID: 1340503526}
+  - component: {fileID: 1340503529}
   m_Layer: 0
   m_Name: 'gulungankertasCoin '
   m_TagString: Kuis2
@@ -5190,6 +5275,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1340503529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340503524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903479373cf7a694fb7175443f367606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1346821697
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,6 +6516,7 @@ GameObject:
   - component: {fileID: 1713744276}
   - component: {fileID: 1713744279}
   - component: {fileID: 1713744278}
+  - component: {fileID: 1713744280}
   m_Layer: 0
   m_Name: 'gulungankertasCoin '
   m_TagString: Kuis1
@@ -6519,6 +6617,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.1999998, y: 3.1999998, z: 0.19999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1713744280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713744275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903479373cf7a694fb7175443f367606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757546411
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,6 +7044,7 @@ GameObject:
   - component: {fileID: 1879701754}
   - component: {fileID: 1879701756}
   - component: {fileID: 1879701755}
+  - component: {fileID: 1879701757}
   m_Layer: 0
   m_Name: gulungankertas
   m_TagString: Kuis1
@@ -7021,6 +7132,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1879701757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879701753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903479373cf7a694fb7175443f367606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1885291128
 GameObject:
   m_ObjectHideFlags: 0
@@ -7681,6 +7804,7 @@ GameObject:
   - component: {fileID: 2068756469}
   - component: {fileID: 2068756471}
   - component: {fileID: 2068756470}
+  - component: {fileID: 2068756472}
   m_Layer: 0
   m_Name: gulungankertas
   m_TagString: Kuis3
@@ -7768,6 +7892,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2068756472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068756468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903479373cf7a694fb7175443f367606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2118924876
 GameObject:
   m_ObjectHideFlags: 0
